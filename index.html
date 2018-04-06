@@ -1,0 +1,92 @@
+﻿<!doctype>
+<html lang='pt-BR'>
+<head>
+
+	<title>Chapéu Seletor</title>
+
+	<link rel="stylesheet" type="text/css" href="css/normalize.css"> 
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>	
+	<link rel="stylesheet" type="text/css" href="css/css.css">
+	<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+	<meta property="og:locale" content="pt-br">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Faça o teste! ">
+    <meta property="og:site_name" content="Ministério da Magia">
+    <meta property="og:description" content="Venha descobrir qual casa de Hogwarts você é! ">
+
+    <meta property="og:image" content="">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="500"> 
+    <meta property="og:image:height" content="302">
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/quiz.js"></script>	
+	<script type="text/javascript" src="js/sweetalert-dev.js"></script>		
+
+	<script>
+	  window.fbAsyncInit = function() {
+	    FB.init({
+	      appId      : 'SEU ID AQUI',
+	      xfbml      : true,
+	      version    : 'v2.5'
+	    });
+	  };
+
+	  (function(d, s, id){
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) {return;}
+	     js = d.createElement(s); js.id = id;
+	     js.src = "http://connect.facebook.net/en_US/sdk.js";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	</script>
+
+	<script type="text/javascript" src="js/js.js"></script>
+
+	<!--[if IE]>
+	  <script src="js/html5shiv.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+
+<div id='principal'>
+	
+	<section>
+		
+		<!-- PERGUNTAS -->
+		<div id="scroll"></div>
+
+		<!-- BOTÃO -->
+	    <div id="vassoura"></div>
+
+	</section>
+
+	<div id="enviarEmail">
+
+		<h3>Grupo no Whatsapp</h3>
+		<h5>Digite seus dados para que o Ministério da Mágia possa adicionar seu número em nossos grupos do WhatsApp.</h5>
+
+		<form id="contato">
+
+			<input type="text" id="nome" placeholder="Nome" required> <br/>
+			<input type="email" id="email" placeholder="E-mail" required><br/>
+			<input type="tel" id="tel" placeholder="Whatsapp" required><br/>
+			<input type="submit" value="Enviar" id="enviarContato"/>
+
+		</form>
+
+		<div id="fechar">
+			<a href="javascript: fechar()">
+				<img src="images/fechar.png"/>
+			</a>
+		</div>
+
+	</div>
+
+	<audio id="audio" style="display: none;"></audio>
+	
+</div>
+</body>
+</html>
