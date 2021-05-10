@@ -9,3 +9,6 @@ O aplicativo possui uma base de dados com algumas perguntas, então, ele selecio
 # Integração
 
 O Chapéu Seletor tem integração com o app do Facebook e possuí um web service em php.
+
+# Demonstração
+https://jeihcio.github.io/Chapeu-Seletor/
